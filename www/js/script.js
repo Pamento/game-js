@@ -1,6 +1,5 @@
-let player1 = new Person("Paul",100,isLive=true);
-let player2 = new Person("Alex",100,isLive=true);
+let Paul = new Person("Paul",100);
+let Alex = new Person("Alex",100);
 
-
-console.log(player1);
-console.log(player2);
+console.log(Paul.about());
+console.log(Alex.about());
