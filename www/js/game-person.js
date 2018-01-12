@@ -9,13 +9,7 @@ class Person {
     else if (( this.points === 0 ) || ( this.points < 0 )){livePlayer = "I's death";}
     return `${this.nick} has: ${this.points} poinds\n${livePlayer}.`;
   }
-  atack(player) {
-    console.log("player "+player);
-    console.log("player "+player.nick);
-    console.log("player points "+player.points);
-    console.log("this.nick "+this.nick);
-    console.log("this.points "+this.points);
-    
+  atack(player) {    
     let verbose;
     if(this.points > 0){
       if( player.points >= 10 ) {
@@ -33,10 +27,7 @@ class Person {
       }
     } else {
       verbose = ` ${this.nick} don't cant fite, is death;\nGame over !`
-    }
-
-        
+    }        
     return verbose;
-  
   }
 }
